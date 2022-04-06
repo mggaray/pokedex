@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Buscador de pokemon</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <h1> Pokemon</h1>
+            <label for="poke">Buscar Pokemon!!</label>
+            <input required placeholder="Ingresa el nombre" id="poke" name="poke" type="text" >
+            <button name="send" class="btnSend"> Enviar</button>
+        </div>
+ 
+    </div>
+    
+    <div class="pokeInfo">
+        <h3 class="pokeInfo__name"></h3>
+        <img class="pokeInfo__img" src="" alt="">
+        <p class="number"></p>
+    </div>
+</body>
+</html>
+

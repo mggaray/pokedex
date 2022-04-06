@@ -1,0 +1,85 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+:root{
+    --fondo: #14213d;
+    --accent: #fca311;
+    --element: #F24A72;
+    --card: #e5e5e5;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--fondo);
+    color: white;
+    margin: 0px;
+    transition: 0.6s;
+}
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 5%;
+    max-width: 900px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.form>input{
+    margin: 10% 0% 5% 0%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 20px;
+}
+
+.btnSend{
+    background-color: var(--element);
+    border: none;
+    border-radius: 20px;
+    padding: 1.3em;
+    transition: 1.4s;
+}
+
+.btnSend:hover{
+    background-color: var(--accent);
+}
+
+.card{
+    display: none;
+}
+
+.card--visible{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em;
+    border-radius: 40px;
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: var(--card);
+    color: var(--accent);
+}
+
+.pokeInfo__name{
+    font-size: 1.4em;
+    font-weight: 800;
+}
+
+.pokeInfo__img{
+    object-fit: cover;
+    width: 40%;
+    height: 40%;
+}

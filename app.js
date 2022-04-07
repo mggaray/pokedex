@@ -26,12 +26,11 @@ function getPokemon(res){
 
 btnSend.addEventListener("click", ()=>{
     const search= input.value.toLowerCase();
-     pokeInfo.classList.add("pokeInfo--visible");
         axios.get(`https://pokeapi.co/api/v2/pokemon/${search}`)
-         .then((res) => getPokemon(res))
-         .catch((err) => {
-            pokeName.textContent=err;
-         }) 
+         .then((res) =>{
+            pokeInfo.classList.add("pokeInfo--visible")
+            getPokemon(res)
+         })
     });
 
  btnNext.addEventListener("click", ()=>{
